@@ -1,0 +1,64 @@
+Case Study: Predicting House Prices Using Linear Regression
+1. Introduction
+
+This project aims to develop a predictive model for residential house prices using available real estate data. Understanding the factors that influence house prices is critical for buyers, sellers, and real estate professionals to make informed decisions. The goal is to apply linear regression techniques to quantify the relationship between various property features and the market price.
+2. Dataset Overview
+
+The dataset used in this study contains information on houses including features such as:
+
+    Numeric variables: size in square meters, number of bedrooms, bathrooms, parking spaces
+
+    Categorical variables: furnishing status (e.g., furnished, semi-furnished, unfurnished)
+
+    Target variable: house price 
+
+Dataset Size and Quality:
+The dataset consists of 545 records with 13 features.
+3. Exploratory Data Analysis (EDA)
+
+Prior to modeling, extensive exploratory data analysis was conducted:
+
+    Descriptive Statistics:
+    The average house price was approximately R4.77 million, with prices ranging from 1.75mil to 133mil.
+
+    Feature Distributions:
+    Features like bedrooms and bathrooms were discrete and showed expected distributions.
+
+4. Modeling Approach
+
+A Linear Regression model was selected due to its simplicity and interpretability.
+
+    The dataset was split into training and testing sets.
+
+    The model was trained on the training set and evaluated on the test set.
+
+    Key evaluation metrics calculated included:
+
+        Mean Absolute Error (MAE)
+
+        Mean Squared Error (MSE)
+
+        Root Mean Squared Error (RMSE)
+
+        R-squared (R²)
+
+5. Results
+Metric	Value	Interpretation
+Mean Absolute Error (MAE)	R1,088,089	On average, predictions are off by ~R1.09 million.
+Mean Squared Error (MSE)	2.12 × 10¹²	Penalizes larger errors more heavily.
+Root Mean Squared Error (RMSE)	R1,454,879	Typical prediction error magnitude.
+R-squared (R²)	0.53	Model explains 53% of the variance in house prices.
+
+The inclusion of features such as parking improved the R² from 0.51 to 0.53, indicating better model performance with more relevant predictors.
+6. Discussion
+
+The model captured significant relationships between house features and prices but explained just over half the variability, suggesting that additional factors not captured in the dataset impact house pricing.
+
+Improvements could include:
+
+    Incorporating more detailed location data and neighborhood quality indicators.
+
+
+7. Conclusion
+
+This project demonstrated the application of linear regression for predicting house prices using South African real estate data. While the model provides a reasonable baseline, future work should focus on enhancing data quality and model complexity to improve predictive accuracy.
